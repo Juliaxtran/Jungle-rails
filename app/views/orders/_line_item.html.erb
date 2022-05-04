@@ -1,0 +1,17 @@
+<section class="col-md-6 mb-2">
+
+<% @order.line_items.each  do |item| %>
+
+  <u><h2> <strong> Product Name : <%= item.product.name%></strong> </h2></u>
+  <img src="<%= item.product.image%>" width="300" height="300" alt="Product Image" />
+  <h5>  <%= item.product.description%> </h5>
+  <h5> <strong> Quantity : <%= item.quantity%> </strong></h5>
+  <h5> <strong> Price:$<%= item.product.price_cents / 100 %></strong> </h5>
+  <h5> <strong>Item Total : $ <%= item.total_price_cents / 100 %> </strong></h5>
+
+
+
+ <%end%>
+ </section>
+
+
