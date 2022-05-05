@@ -9,7 +9,8 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      redirect_to '/signup'
+      flash[:alert] = "Please make sure no inputs are empty.Passwords need a minimum of 3 characters."
+      redirect_to '/users'
     end
   end
 
