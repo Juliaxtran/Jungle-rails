@@ -1,16 +1,25 @@
 <h1>Signup!</h1>
 
+
+<div class="signup">
+
 <%= form_for :user, url: '/users' do |f| %>
 
-  First Name: <%= f.text_field :first_name %>
-  <br>
-  Last Name: <%= f.text_field :last_name %>
-  <br>
-  Email: <%= f.text_field :email %>
-  <br>
-  Password: <%= f.password_field :password %>
-  <br>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+  First Name: <%= f.text_field :first_name , class:"form-control" %>
+
+
+  Last Name: <%= f.text_field :last_name , class:"form-control"%>
+
+  Email: <%= f.text_field :email , class:"form-control" %>
+
+  Password: <%= f.password_field :password , class:"form-control" %>
+
+  Password Confirmation: <%= f.password_field :password_confirmation , class:"form-control"%>
+
+<br>
+  <%= f.submit "Submit", class:"btn btn-primary" %>
 
 <% end %>
+
+</div>
+
