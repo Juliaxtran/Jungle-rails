@@ -9,10 +9,12 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      flash[:alert] = "Password or Email was incorrect. Please try again."
+      flash[:alert] = "Invalid email/password combination"
       redirect_to '/sessions'
     end
   end
+
+  
 
   def destroy
     session[:user_id] = nil
