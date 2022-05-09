@@ -9,10 +9,13 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      flash[:alert] = "Error: Please make sure no inputs are empty.Passwords need a minimum of 3 characters."
+      flash[:alert] = "Error: Make sure no inputs are empty.Passwords need a minimum of 3 characters. If still experiencing errors, email has already been used to sign up. Please sign in"
       redirect_to '/users'
     end
   end
+
+
+
 
   private
   def user_params
