@@ -118,6 +118,8 @@ RSpec.describe User, type: :model do
     expect(u.errors[:email].first).to eq('has already been taken')
   end
 
+
+  # different way of checking uniquesness
   context 'Email needs to not unique' do
     before { described_class.create!(first_name: 'John', last_name: 'Tran', email: 'john@home.xyz', password: '123', password_confirmation: '123')}
     it {expect(subject).to be_invalid}
@@ -133,7 +135,7 @@ RSpec.describe User, type: :model do
   end
 end
 
-
+# authenitcate specs
 
 describe '.authenticate_with_credentials' do
   it 'should pass with valid credentials' do
