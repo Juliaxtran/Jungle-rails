@@ -22,10 +22,10 @@ Enhancement: Order Details Page -  The order page contains items, their image, n
 Examples of the bugs that were fixed include missing admin security and error handling when checking out with an empty cart.
 
 ## Screenshots
-!["Screen shot of main page"]('https://github.com/Juliaxtran/Jungle-rails/blob/master/images/home.png)
-!["Screen shot of cart"]('https://github.com/Juliaxtran/Jungle-rails/blob/master/images/cart.png)
-!["Screen shot of stripe payment"]('https://github.com/Juliaxtran/Jungle-rails/blob/master/images/stripe.png)
-!["Screen shot of error handling"]('https://github.com/Juliaxtran/Jungle-rails/blob/master/images/errors.png)
+!["Screen shot of main page"]('https://github.com/Juliaxtran/Jungle-rails/blob/master/images/home.png')
+!["Screen shot of cart"]('https://github.com/Juliaxtran/Jungle-rails/blob/master/images/cart.png')
+!["Screen shot of stripe payment"]('https://github.com/Juliaxtran/Jungle-rails/blob/master/images/stripe.png')
+!["Screen shot of error handling"]('https://github.com/Juliaxtran/Jungle-rails/blob/master/images/errors.png')
 
 
 ## Setup
