@@ -8,7 +8,7 @@ Admin Categories - Admin users can list and create new categories.
                  - Admin can add new products using the new category.
                  - Restful resourses were used.
 
-User Authentication - Visitorrs can go to the  registration page from any page in order to create an account
+User Authentication - Visitors can go to the  registration page from any page in order to create an account
                     -  Visitors can sign up for a user account with my e-mail, password, first name and last name
                     -  Visitors  can sign in using an e-mail and password
                     - Users can loggout from any page
